@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- head-sec start -->
+    <div class="header-sec" id="header">
+      <div class="left" id="search-hide">
+        <i id="menue" class="material-icons">menue</i>
+        <img src="images/youtube.png" alt="" />
+      </div>
+
+
+      <div class="center" id="center-searchBar">
+        <form action="">
+          <input type="text" placeholder="Search"/>
+          <button>
+            <i class="material-icons">search</i>
+          </button>
+        </form>
+      </div>
+
+
+
+      <div class="right" id="search-hide2">
+        <i
+          class="material-icons show-item hide-last"
+          id="search-area" onclick="searchClicked()">search</i>
+        <i class="material-icons" id="video_icon">videocam</i>
+        <i class="material-icons show-item" id="notification-icon"
+          >notifications</i>
+        <i class="material-icons show-item" id="account_icon">account_circle</i>
+      </div>
+    </div>
+    <!-- head sec end -->
+    <!-- sidebarshow start -->
+    <div class="circle_sidebar">
+      <div class="circle_categories">
+        <div class="circle_category">
+          <img src="images/user.jpeg" alt="" />
+          <span>John Doe</span>
+        </div>
+        <!-- <hr /> -->
+
+        <div class="circle_category">
+          <div class="material-icons">person</div>
+          <span>Your Account</span>
+        </div>
+
+        <div class="circle_category">
+          <div class="material-icons">video_camera_front</div>
+          <span>Your Studio</span>
+        </div>
+
+        <div class="circle_category">
+          <div class="material-icons">switch_account</div>
+          <span>Switch Account</span>
+        </div>
+
+        <div class="circle_category">
+          <div class="material-icons">logout</div>
+          <span>Sign out</span>
+        </div>
+        <!-- <hr /> -->
+
+        <div class="circle_category">
+          <div class="material-icons">attach_money</div>
+          <span>Purchases and Membership</span>
+        </div>
+
+        <div class="circle_category">
+          <div class="material-icons">contact_page</div>
+          <span>Your Data in Youtube</span>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- sidebarshow start -->
+
+    <!-- notification sidebar -->
+    <div class="not_sidebar">
+      <div class="not-categories">
+        <div class="not-category">
+          <img src="images/apnaCollege.jpeg" alt="" />
+          <p>
+            Try these Techniques in your College First Year <br />
+            || Apna College ||
+          </p>
+          <!-- <img src="thumb2.jpeg" alt=""> -->
+        </div>
+        <hr />
+        <div class="not-category">
+          <img src="images/speed.jpeg" alt="" />
+          <p>
+            Text is a Google Chrome packaged app. It functions as a lightweight
+            text editor that is not platform dependent.
+          </p>
+          <!-- <img src="thumb2.jpeg" alt=""> -->
+        </div>
+        <hr />
+        <div class="not-category">
+          <img src="/images/harrydp.jpeg" alt="" />
+          <p>
+            Text is a Google Chrome packaged app. It functions as a lightweight
+            text editor that is not platform dependent.
+          </p>
+          <!-- <img src="thumb2.jpeg" alt=""> -->
+        </div>
+        <hr />
+        <div class="not-category">
+          <img src="images/sharique.jpeg" alt="" />
+          <p>
+            Text is a Google Chrome packaged app. It functions as a lightweight
+            text editor that is not platform dependent.
+          </p>
+          <!-- <img src="thumb2.jpeg" alt=""> -->
+        </div>
+        <hr />
+        <div class="not-category">
+          <img src="images/433.png" alt="" />
+          <p>
+            Text is a Google Chrome packaged app. It functions as a lightweight
+            text editor that is not platform dependent.
+          </p>
+          <!-- <img src="thumb2.jpeg" alt=""> -->
+        </div>
+        <hr />
+      </div>
+    </div>
+    <!-- notification sidebar ends -->
+
+    <div class="video_sidebar">
+      <div class="video_categories">
+        <div class="video_category">
+          <div class="material-icons">smart_display</div>
+          <span>Upload Video</span>
+        </div>
+        <div class="video_category">
+          <div class="material-icons">live_tv</div>
+          <span>Go live</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- new search bar -->
+
+    <!-- new search bar ends -->
+
+    <!-- main body section -->
+    <div class="mainBody">
+      <!-- side bar start -->
+      <div class="sidebar">
+        <div class="sidebar_categories">
+          <div class="sidebar_category">
+            <div class="material-icons">home</div>
+            <span>Home</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">local_fire_department</div>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">subscriptions</div>
+            <span>subscriptions</span>
+          </div>
+          <hr />
+          <div class="sidebar_category">
+            <div class="material-icons">library_add_check</div>
+            <span>Library</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">history</div>
+            <span>History</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">play_arrow</div>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">watch_later</div>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar_category">
+            <div class="material-icons">thumb_up</div>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+
+      <!-- sidebar end -->
+      <div class="videos">
+        <h1>Recommended</h1>
+        <div class="videos_container">
+          <div class="card" style="width: 20rem">
+            <img src="images/thumb2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/sharique.jpeg" alt="" />
+              <span>Sharique Shamsudeen</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/author.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/author.jpeg" alt="" />
+              <span>Mrwhostheboss</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/speedChallenge.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/speed.jpeg" alt="" />
+              <span>Ishowspeed</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/harry2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/harrydp.jpeg" alt="" />
+              <span>CodewithHarry</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/barca.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/433.png" alt="" />
+              <span>433</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/karikkOnam.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/karikku.jpeg" alt="" />
+              <span>Karikku</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/happiness.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/movie.jpeg" alt="" />
+              <span>MovieMedia</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/panda.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/pandaLogo.jpeg" alt="" />
+              <span>Panda</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/speedUnited.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/luffy.jpg" alt="" />
+              <span>Livespeedy</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/thumb2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/sharique.jpeg" alt="" />
+              <span>Athena Gaming</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/thumb1.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/athena.png" alt="" />
+              <span>Athena Gaming</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 20rem">
+            <img src="images/thumb2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <img src="images/athena.png" alt="" />
+              <span>Athena Gaming</span>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
